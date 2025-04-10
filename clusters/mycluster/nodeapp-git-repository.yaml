@@ -1,0 +1,11 @@
+---
+apiVersion: image.toolkit.fluxcd.io/v1beta2
+kind: ImageRepository
+metadata:
+  name: nodeapp-git-repo
+  namespace: flux-system
+spec:
+  image: yahanjunho/nodeapp-git
+  interval: 20s
+  secretRef:
+    name: dockerhub-cred
