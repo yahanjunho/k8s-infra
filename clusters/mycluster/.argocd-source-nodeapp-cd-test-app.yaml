@@ -1,0 +1,3 @@
+kustomize:
+  images:
+  - yahanjunho/nodeapp-git:1.5.0
